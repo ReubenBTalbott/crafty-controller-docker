@@ -5,7 +5,7 @@ ARG BUILDKIT_INLINE_CACHE=1
 
 LABEL maintainer="Phillip Tarrant <https://gitlab.com/Ptarrant1> and Dockerfile created by kevdagoat <https://gitlab.com/kevdagoat>, modified by David Kolb <https://github.com/dkolb>"
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y \
   openjdk-11-jdk \
   libmysqlclient-dev \
   python3 \
