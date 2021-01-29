@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM ubuntu:20.04
 
 # Use yourself as a possible cache.
 ARG BUILDKIT_INLINE_CACHE=1
